@@ -1,0 +1,366 @@
+/*Обнуление*/
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	background-color: #333;
+	font-family:consolas, monospace;
+	color: #fff;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+
+.wrapper{
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.game {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor2.png') 30 30, auto;
+}
+
+.game:hover .game__win{
+	animation: win 60s steps(1) forwards;
+}
+
+.game:hover .game__counter:after{
+	animation: timer_1 60s steps(60) forwards;
+}
+.game:hover .game__text span:after{
+	animation: timer_2 60s steps(60) forwards;
+}
+
+.game__body:hover .game__counter:after,
+.game__body:hover .game__text span:after{
+	animation-play-state: paused;
+}
+
+.game__body,
+.game__body2,
+.game__body3,
+.game__body4,
+.game__body5,
+.game__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+.game__body:before,
+.game__body:after,
+.game__body2:before,
+.game__body2:after,
+.game__body3:before,
+.game__body3:after,
+.game__body4:before,
+.game__body4:after,
+.game__body5:before,
+.game__body5:after,
+.game__items:before,
+.game__items:after{
+	content: '';
+	pointer-events: all;
+	width: 50px;
+	height: 50px;
+	border-radius: 45%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: inline-block;
+}
+.game__body:before{
+	background-color:yellow;
+	animation: fly_1 24s infinite;
+}
+.game__body:after{
+	background-color: blue;
+	animation: fly_2 11s infinite;
+}
+.game__body2:before{
+	background-color: #fcf;
+	animation: fly_5 16s infinite;
+}
+.game__body2:after{
+	background-color: white;
+	animation: fly_5 24s infinite;
+}
+.game__body3:before{
+	background-color: #bbbb;
+	animation: fly_4 11s infinite;
+}
+.game__body3:after{
+	background-color: #effb;
+	animation: fly_5 16s infinite;
+}
+.game__body4:before{
+	background-color: #bfbb;
+	animation: fly_1 11s infinite;
+}
+.game__body4:after{
+	background-color: #aafb;
+	animation: fly_3 24s infinite;
+}
+.game__body5:before{
+	background-color: #cc18c1;
+	animation: fly_7 18s infinite;
+}
+.game__body5:after{
+	background-color: #076400;
+	animation: fly_7 13s infinite;
+}
+.game__items:before{
+	background-color: green;
+	animation: fly_3 17s infinite;
+}
+.game__items:after{
+	background-color: red;
+	animation: fly_6 24s infinite;
+}
+@keyframes fly_1{
+	10% {transform: translate(64vw, 0vh);}
+	20% {transform: translate(0vw, 55.667vh);}
+	30% {transform: translate(20vw, 95.667vh);}
+	40% {transform: translate(95.667vw, 0vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(30vw, 0vh);}
+	70% {transform: translate(75vw, 75vh);}
+	80% {transform: translate(95.667vw, 75.667vh);}
+	90% {transform: translate(50vw, 0vh);}
+}
+@keyframes fly_2{
+	25% {transform: translate(0vw, 94.667vh);}
+	50% {transform: translate(94.667vw, 0vh);}
+	75% {transform: translate(94.667vw, 94.667vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_3{
+	10% {transform: translate(25vw, 75vh);}
+	20% {transform: translate(0vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 45vh);}
+	40% {transform: translate(95.667vw, 0vh);}
+	50% {transform: translate(0vw, 20vh);}
+	60% {transform: translate(65vw, 0vh);}
+	70% {transform: translate(95vw, 30vh);}
+	80% {transform: translate(95.667vw, 75vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_4{
+	25% {transform: translate(90.667vw, 0vh);}
+	50% {transform: translate(0vw, 90.667vh);}
+	75% {transform: translate(90.667vw, 90.667vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_5{
+	10% {transform: translate(64vw, 50vh);}
+	20% {transform: translate(0vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 95.667vh);}
+	40% {transform: translate(95.667vw, 0vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw, 0vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(95.667vw, 95.667vh);}
+	90% {transform: translate(50vw, 0vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_6{
+	10% {transform: translate(83vw, 69vh);}
+	20% {transform: translate(33vw, 44vh);}
+	30% {transform: translate(95.667vw, 25vh);}
+	40% {transform: translate(20vw, 10vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw,75vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(11vw, 26vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_7{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(90vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 40vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(15vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(46vw, 60vh);}
+	90% {transform: translate(52vw, 40vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+
+
+
+
+
+@keyframes win{
+	0%{}
+	100%{
+		visibility: visible;
+	}
+}
+
+@keyframes timer_1{
+	0%{
+		text-indent: -300ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: 0ch;
+	}
+}
+@keyframes timer_2{
+	0%{
+		text-indent: 0ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: -300ch;
+	}
+}
+
+.game__body:hover:before,
+.game__body:hover:after,
+.game__body2:hover:before,
+.game__body2:hover:after,
+.game__body3:hover:before,
+.game__body3:hover:after,
+.game__body4:hover:before,
+.game__body4:hover:after,
+.game__body5:hover:before,
+.game__body5:hover:after,
+.game__body:hover .game__items:before,
+.game__body:hover .game__items:after{
+	display: none;
+}
+
+.game__body:hover .game__items{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: #333;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	pointer-events: all;
+}
+.game__body:hover .game__text{
+	visibility: visible;
+}
+
+.game__text {
+	font-size: 40px;
+	visibility: hidden;
+}
+.game__text span{
+	font-size: 40px;
+	width: 109px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	color: blue;
+}
+
+.game__counter {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 72px;
+	font-size: 26px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.game__text span:after,
+.game__counter:after{
+	display: block;
+	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
+}
+
+.game__win {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #333;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	visibility: hidden;
+}
+
+.info {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 50;
+}
+.info__icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+}
+.info__body {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+	width: 250px;
+	border-radius: 0 0 18px 0;
+	padding: 40px 5px 35px 20px;
+}
+.info__body:target{
+	display: block;
+}
+
+.info__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 18px;
+	color: #fff;
+}
+.info__text {
+	padding: 0px 10px 0px 0px;
+}
+.info__text p{
+	margin: 0px 0px 10px 0px;
+}
+.info__text p:last-child{
+	margin: 0;
+}
