@@ -28,7 +28,7 @@ a{
 	height: 100%;
 	top: 0;
 	left: 0;
-	cursor: url('../img/cursor2.png') 30 30, auto;
+	cursor: url('../img/cursor2.png') 24 24, auto;
 }
 
 .game:hover .game__win{
@@ -84,50 +84,96 @@ a{
 	display: inline-block;
 }
 .game__body:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color:yellow;
 	animation: fly_1 24s infinite;
 }
 .game__body:after{
-	background-color: blue;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+background-color: blue;
 	animation: fly_2 11s infinite;
 }
 .game__body2:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: #fcf;
 	animation: fly_5 16s infinite;
 }
 .game__body2:after{
-	background-color: white;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	animation: fly_5 24s infinite;
 }
 .game__body3:before{
-	background-color: #bbbb;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	animation: fly_4 11s infinite;
 }
 .game__body3:after{
 	background-color: #effb;
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	animation: fly_5 16s infinite;
 }
 .game__body4:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color: #bfbb;
 	animation: fly_1 11s infinite;
 }
 .game__body4:after{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color: #aafb;
 	animation: fly_3 24s infinite;
 }
 .game__body5:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color: #cc18c1;
 	animation: fly_7 18s infinite;
 }
 .game__body5:after{
 	background-color: #076400;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	animation: fly_7 13s infinite;
 }
 .game__items:before{
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: green;
 	animation: fly_3 17s infinite;
 }
 .game__items:after{
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: red;
 	animation: fly_6 24s infinite;
 }
