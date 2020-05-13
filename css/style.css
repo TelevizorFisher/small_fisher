@@ -410,3 +410,67 @@ background-color: blue;
 .info__text p:last-child{
 	margin: 0;
 }
+
+-----
+.menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	visibility: hiden;
+}
+.menu__icon {
+
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+	border-radius: 75%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 41;
+
+
+}
+.menu__body {
+	/*
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	width: 250px;
+	border-radius: 0 0 18px 0;
+	padding: 40px 5px 35px 20px;
+	*/
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	background-color: #333;
+
+	font-size: 40px;
+}
+.menu__body:target{
+	display: block;
+}
+.conteiner {
+		width: 100%;
+	height: 100%;
+}
+.menu__close {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+height:100%;
+	font-size: 40px;
+	color: #fff;
+}
