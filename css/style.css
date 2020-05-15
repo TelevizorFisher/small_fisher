@@ -52,6 +52,8 @@ a{
 .game__body3,
 .game__body4,
 .game__body5,
+.game__body6,
+.game__body7,
 .game__items {
 	position: absolute;
 	width: 100%;
@@ -70,6 +72,10 @@ a{
 .game__body4:after,
 .game__body5:before,
 .game__body5:after,
+.game__body6:before,
+.game__body6:after,
+.game__body7:before,
+.game__body7:after,
 .game__items:before,
 .game__items:after{
 	content: '';
@@ -89,7 +95,7 @@ a{
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	background-color:yellow;
-	animation: fly_1 24s infinite;
+	animation: fly_1 25s infinite;
 }
 .game__body:after{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -97,7 +103,7 @@ a{
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 background-color: blue;
-	animation: fly_2 11s infinite;
+	animation: fly_2 16s infinite;
 }
 .game__body2:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -105,21 +111,21 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 	background-color: #fcf;
-	animation: fly_5 16s infinite;
+	animation: fly_5 18s infinite;
 }
 .game__body2:after{
 	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-	animation: fly_5 24s infinite;
+	animation: fly_5 26s infinite;
 }
 .game__body3:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-	animation: fly_4 11s infinite;
+	animation: fly_4 13s infinite;
 }
 .game__body3:after{
 	background-color: #effb;
@@ -127,7 +133,7 @@ background-color: blue;
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
-	animation: fly_5 16s infinite;
+	animation: fly_5 18s infinite;
 }
 .game__body4:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -135,7 +141,7 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	background-color: #bfbb;
-	animation: fly_1 11s infinite;
+	animation: fly_1 13s infinite;
 }
 .game__body4:after{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -143,7 +149,7 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	background-color: #aafb;
-	animation: fly_3 24s infinite;
+	animation: fly_3 26s infinite;
 }
 .game__body5:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -151,7 +157,7 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	background-color: #cc18c1;
-	animation: fly_7 18s infinite;
+	animation: fly_7 20s infinite;
 }
 .game__body5:after{
 	background-color: #076400;
@@ -159,7 +165,39 @@ background-color: blue;
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
-	animation: fly_7 13s infinite;
+	animation: fly_7 17s infinite;
+}
+.game__body6:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: fly_8 30s infinite;
+		background-color: #076400;
+}
+.game__body6:after{
+	background-color: #effb;
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
+	animation: fly_8 52s infinite;
+		background-color: #076400;
+	}
+	.game__body7:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: fly_7 37s infinite;
+}
+.game__body7:after{
+	background-color: #effb;
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
+	animation: fly_8 22s infinite;
 }
 .game__items:before{
 		background-image: url(../img/1356462528_1357539925.jpg);
@@ -167,7 +205,7 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 	background-color: green;
-	animation: fly_3 17s infinite;
+	animation: fly_3 20s infinite;
 }
 .game__items:after{
 		background-image: url(../img/1356462528_1357539925.jpg);
@@ -175,13 +213,13 @@ background-color: blue;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 	background-color: red;
-	animation: fly_6 24s infinite;
+	animation: fly_6 28s infinite;
 }
 @keyframes fly_1{
-	10% {transform: translate(64vw, 0vh);}
-	20% {transform: translate(0vw, 55.667vh);}
-	30% {transform: translate(20vw, 95.667vh);}
-	40% {transform: translate(95.667vw, 0vh);}
+	10% {transform: translate(64vw, 15vh);}
+	20% {transform: translate(5vw, 55.667vh);}
+	30% {transform: translate(45vw, 95.667vh);}
+	40% {transform: translate(95.667vw, 45vh);}
 	50% {transform: translate(0vw, 45vh);}
 	60% {transform: translate(30vw, 0vh);}
 	70% {transform: translate(75vw, 75vh);}
@@ -189,18 +227,18 @@ background-color: blue;
 	90% {transform: translate(50vw, 0vh);}
 }
 @keyframes fly_2{
-	25% {transform: translate(0vw, 94.667vh);}
-	50% {transform: translate(94.667vw, 0vh);}
+	25% {transform: translate(45vw, 94.667vh);}
+	50% {transform: translate(94.667vw, 45vh);}
 	75% {transform: translate(94.667vw, 94.667vh);}
 	0%, 100% {transform: translate(0px, 0px);}
 }
 @keyframes fly_3{
 	10% {transform: translate(25vw, 75vh);}
-	20% {transform: translate(0vw, 95.667vh);}
+	20% {transform: translate(66vw, 95.667vh);}
 	30% {transform: translate(95.667vw, 45vh);}
-	40% {transform: translate(95.667vw, 0vh);}
+	40% {transform: translate(95.667vw, 66vh);}
 	50% {transform: translate(0vw, 20vh);}
-	60% {transform: translate(65vw, 0vh);}
+	60% {transform: translate(65vw, 15vh);}
 	70% {transform: translate(95vw, 30vh);}
 	80% {transform: translate(95.667vw, 75vh);}
 	90% {transform: translate(50vw, 50vh);}
@@ -214,11 +252,11 @@ background-color: blue;
 }
 @keyframes fly_5{
 	10% {transform: translate(64vw, 50vh);}
-	20% {transform: translate(0vw, 95.667vh);}
+	20% {transform: translate(33vw, 95.667vh);}
 	30% {transform: translate(95.667vw, 95.667vh);}
-	40% {transform: translate(95.667vw, 0vh);}
+	40% {transform: translate(95.667vw, 33vh);}
 	50% {transform: translate(0vw, 45vh);}
-	60% {transform: translate(95.667vw, 0vh);}
+	60% {transform: translate(95.667vw, 33vh);}
 	70% {transform: translate(0vw, 30vh);}
 	80% {transform: translate(95.667vw, 95.667vh);}
 	90% {transform: translate(50vw, 0vh);}
@@ -237,6 +275,40 @@ background-color: blue;
 	0%, 100% {transform: translate(0px, 0px);}
 }
 @keyframes fly_7{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(100vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 100vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(55vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(22vw, 22vh);}
+	90% {transform: translate(52vw, 13vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+@keyframes fly_8{
+	5% {transform: translate(20vw, 5vh);}
+	10% {transform: translate(5vw, 20vh);}
+	15% {transform: translate(40vw, 10vh);}
+	20% {transform: translate(10vw, 40vh);}
+	25% {transform: translate(50vw, 10vh);}
+	30% {transform: translate(10vw, 50vh);}
+	35% {transform: translate(70vw,70vh);}
+	40% {transform: translate(75vw, 55vh);}
+	45% {transform: translate(55vw, 75vh);}
+	50% {transform: translate(85vw, 8vh);}
+	55% {transform: translate(8vw, 85vh);}
+	60% {transform: translate(5vw, 65vh);}
+	65% {transform: translate(44vw, 70vh);}
+	70% {transform: translate(36vw, 78vh);}
+	75% {transform: translate(78vw, 36vh);}
+	80% {transform: translate(20vw, 15vh);}
+	85% {transform: translate(30vw,85vh);}
+	90% {transform: translate(85vw, 76vh);}
+	95% {transform: translate(88vw, 88vh);}
+	0%, 100% {transform: translate(63px, 77px);}
+}
+@keyframes fly_9{
 	10% {transform: translate(60vw, 60vh);}
 	20% {transform: translate(90vw, 90vh);}
 	30% {transform: translate(20vw, 20vh);}
@@ -295,6 +367,10 @@ background-color: blue;
 .game__body4:hover:after,
 .game__body5:hover:before,
 .game__body5:hover:after,
+.game__body6:hover:before,
+.game__body6:hover:after,
+.game__body7:hover:before,
+.game__body7:hover:after,
 .game__body:hover .game__items:before,
 .game__body:hover .game__items:after{
 	display: none;
