@@ -14,24 +14,46 @@
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<!-- Отображаемое тело страницы -->
+
 	<body>
+
+
 		<!-- Оболочка для демонстрации -->
+	<div id="rect">
 		<div class="wrapper">
 			<!-- Контент -->
 			<a href="">
 				
 			</a>
 
-			<div class="menu">
+			<div class="menu" >
 
 				<a href="#menu" title="menu" class="menu__icon">Menu</a>
-				<div id="menu" class="menu__body">
-					<div class="conteiner">
-						<a href="#" class="menu__close">Розпочати гру</a>
+				<div id="menu" class="menu__body" >
+					<div class="conteiner" id="idconteiner">
+						<div class="menu__color" >
+									<a href="#" class="menu__close">Розпочати гру</a>
+									<input id="first1"  type="button" value="Жовтий" />
+									<input id="first2"  type="button" value="Голубий" />
+									<input id="first3"  type="button" value="На вибір" />
+									<input id="first"  type="button" value="Перелив" />
+									<input type="color" id="myColor">
+							<div class="menu__ikonki">
+								<div class="menu__elements">
+									<input id="ikon_1"  type="button" value="" />
+									<input id="arrow1"  type="button" value=">" />
+									<input id="ikon_2"  type="button" value="" />
+									<input id="arrow1"  type="button" value=">" />
+									<input id="ikon_3"  type="button" value="" />
+									<input id="arrow1"  type="button" value=">" />
+									<input id="ikon_4"  type="button" value="" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="game">
+			<div class="game" id="gamecursor">
 					<div class="game__body">
 						<div class="game__body2">
 							<div class="game__body3">
@@ -66,6 +88,10 @@
 				</div>
 			</div>
 		</div>
+</div>
+
+
 	</body>
 </html>
+
 <script src="js/main.js"></script>
