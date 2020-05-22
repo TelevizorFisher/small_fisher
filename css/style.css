@@ -21,8 +21,8 @@ a{
 	position: relative;
 	overflow: hidden;
 }
-
-#gamecursor {
+------------------------------/*1*/----------------
+#gamecursor1 {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -114,11 +114,12 @@ a{
 	display: inline-block;
 }
 .game__body:before{
+
 	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
-	background-position: 100% 25%;
-	background-color:yellow;
+	background-position: 0% 25%;
+
 	animation: fly_1 25s infinite;
 }
 .game__body:after{
@@ -126,16 +127,16 @@ a{
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-background-color: blue;
+
 	animation: fly_2 16s infinite;
 }
 .game__body2:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
-	background-repeat: no-repeat;
+/background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-	background-color: #fcf;
-	animation: fly_5 18s infinite;
+	background-color: #fcf4;
+	animation: fly_2 18s infinite;
 }
 .game__body2:after{
 	background-image: url(../img/1356462528_1357539925.jpg);
@@ -453,14 +454,858 @@ background-color: blue;
 	left: 0;
 	z-index: 10;
 	background-color: #333;
+	background: url('../img/win.svg') 0 0 / 100% 100%  no-repeat;
 	display: flex;
 	justify-content:center;
 	align-items: center;
 	text-align: center;
+	font-size: 55px;
+	color: #547;
+	visibility: hidden;
+}
+-----------------/*2*/-----------------------
+.game2:hover .game2__win{
+	animation: win 60s steps(1) forwards;
+}
+
+.game2:hover .game2__counter:after{
+	animation: timer_1 60s steps(60) forwards;
+}
+.game2:hover .game2__text span:after{
+	animation: timer_2 60s steps(60) forwards;
+}
+
+.game2__body:hover .game2__counter:after,
+.game2__body:hover .game2__text span:after{
+	animation-play-state: paused;
+}
+
+.game2__body,
+.game2__body2,
+.game2__body3,
+.game2__body4,
+.game2__body5,
+.game2__body6,
+.game2__body7,
+.game2__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+.game2__body:before,
+.game2__body:after,
+.game2__body2:before,
+.game2__body2:after,
+.game2__body3:before,
+.game2__body3:after,
+.game2__body4:before,
+.game2__body4:after,
+.game2__body5:before,
+.game2__body5:after,
+.game2__body6:before,
+.game2__body6:after,
+.game2__body7:before,
+.game2__body7:after,
+.game2__items:before,
+.game2__items:after{
+	content: '';
+	pointer-events: all;
+	width: 50px;
+	height: 50px;
+	border-radius: 45%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: inline-block;
+}
+.game2__body:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_1 40s infinite;
+
+}
+.game2__body:after{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_4 16s infinite;
+
+}
+.game2__body2:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_2 18s infinite;
+}
+.game2__body2:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: flytw_5 26s infinite;
+}
+.game2__body3:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_4 25s infinite;
+}
+.game2__body3:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_5 18s infinite;
+}
+.game2__body4:before{
+	
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_1 30s infinite;
+}
+.game2__body4:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_3 26s infinite;
+}
+.game2__body5:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_7 20s infinite;
+}
+.game2__body5:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_7 17s infinite;
+}
+.game2__body6:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_8 42s infinite;
+
+}
+.game2__body6:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_8 52s infinite;
+
+	}
+	.game2__body7:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_7 34s infinite;
+}
+.game2__body7:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_8 26s infinite;
+}
+.game2__items:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flytw_3 25s infinite;
+}
+.game2__items:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flytw_6 25s infinite;
+}
+@keyframes flytw_1{
+	5% {transform: translate(20vw, 5vh);}
+	10% {transform: translate(5vw, 20vh);}
+	15% {transform: translate(40vw, 10vh);}
+	20% {transform: translate(10vw, 40vh);}
+	25% {transform: translate(50vw, 10vh);}
+	30% {transform: translate(10vw, 50vh);}
+	35% {transform: translate(55vw,70vh);}
+	40% {transform: translate(5vw, 55vh);}
+	45% {transform: translate(55vw, 75vh);}
+	50% {transform: translate(85vw, 65vh);}
+	55% {transform: translate(8vw, 85vh);}
+	60% {transform: translate(5vw, 65vh);}
+	65% {transform: translate(44vw, 70vh);}
+	70% {transform: translate(25vw, 78vh);}
+	75% {transform: translate(78vw, 36vh);}
+	80% {transform: translate(20vw, 15vh);}
+	85% {transform: translate(30vw,23vh);}
+	90% {transform: translate(5vw, 85vh);}
+	95% {transform: translate(88vw, 15vh);}
+	0%, 100% {transform: translate(63px, 77px);}
+}
+@keyframes flytw_2{
+	25% {transform: translate(45vw, 94.667vh);}
+	50% {transform: translate(94.667vw, 45vh);}
+	75% {transform: translate(94.667vw, 94.667vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flytw_3{
+	10% {transform: translate(25vw, 75vh);}
+	20% {transform: translate(66vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 45vh);}
+	40% {transform: translate(95.667vw, 66vh);}
+	50% {transform: translate(0vw, 20vh);}
+	60% {transform: translate(65vw, 15vh);}
+	70% {transform: translate(95vw, 30vh);}
+	80% {transform: translate(95.667vw, 75vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flytw_4{
+	25% {transform: translate(90.667vw, 0vh);}
+	50% {transform: translate(0vw, 90.667vh);}
+	75% {transform: translate(90.667vw, 90.667vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flytw_5{
+	10% {transform: translate(64vw, 50vh);}
+	20% {transform: translate(33vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 95.667vh);}
+	40% {transform: translate(95.667vw, 33vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw, 33vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(95.667vw, 95.667vh);}
+	90% {transform: translate(50vw, 0vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flytw_6{
+	10% {transform: translate(83vw, 69vh);}
+	20% {transform: translate(33vw, 44vh);}
+	30% {transform: translate(95.667vw, 25vh);}
+	40% {transform: translate(20vw, 10vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw,75vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(11vw, 26vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flytw_7{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(100vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 100vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(55vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(22vw, 22vh);}
+	90% {transform: translate(52vw, 13vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+@keyframes flytw_8{
+	5% {transform: translate(20vw, 5vh);}
+	10% {transform: translate(5vw, 20vh);}
+	15% {transform: translate(40vw, 10vh);}
+	20% {transform: translate(10vw, 40vh);}
+	25% {transform: translate(50vw, 10vh);}
+	30% {transform: translate(10vw, 50vh);}
+	35% {transform: translate(70vw,70vh);}
+	40% {transform: translate(75vw, 55vh);}
+	45% {transform: translate(55vw, 75vh);}
+	50% {transform: translate(85vw, 8vh);}
+	55% {transform: translate(8vw, 85vh);}
+	60% {transform: translate(5vw, 65vh);}
+	65% {transform: translate(44vw, 70vh);}
+	70% {transform: translate(36vw, 78vh);}
+	75% {transform: translate(78vw, 36vh);}
+	80% {transform: translate(20vw, 15vh);}
+	85% {transform: translate(30vw,85vh);}
+	90% {transform: translate(85vw, 76vh);}
+	95% {transform: translate(88vw, 88vh);}
+	0%, 100% {transform: translate(63px, 77px);}
+}
+@keyframes flytw_9{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(90vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 40vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(15vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(46vw, 60vh);}
+	90% {transform: translate(52vw, 40vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+
+
+
+
+
+@keyframes win{
+	0%{}
+	100%{
+		visibility: visible;
+	}
+}
+
+@keyframes timer_1{
+	0%{
+		text-indent: -300ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: 0ch;
+	}
+}
+@keyframes timer_2{
+	0%{
+		text-indent: 0ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: -300ch;
+	}
+}
+
+.game2__body:hover:before,
+.game2__body:hover:after,
+.game2__body2:hover:before,
+.game2__body2:hover:after,
+.game2__body3:hover:before,
+.game2__body3:hover:after,
+.game2__body4:hover:before,
+.game2__body4:hover:after,
+.game2__body5:hover:before,
+.game2__body5:hover:after,
+.game2__body6:hover:before,
+.game2__body6:hover:after,
+.game2__body7:hover:before,
+.game2__body7:hover:after,
+.game2__body:hover .game2__items:before,
+.game2__body:hover .game2__items:after{
+	display: none;
+}
+
+.game2__body:hover .game2__items{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: #333;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	pointer-events: all;
+}
+.game2__body:hover .game2__text{
+	visibility: visible;
+}
+
+.game2__text {
 	font-size: 40px;
 	visibility: hidden;
 }
+.game2__text span{
+	font-size: 40px;
+	width: 109px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	color: blue;
+}
 
+.game2__counter {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 72px;
+	font-size: 26px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.game2__text span:after,
+.game2__counter:after{
+	display: block;
+	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
+}
+
+.game2__win {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #333;
+	background: url('../img/win.svg') 0 0 / 100% 100%  no-repeat;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	font-size: 55px;
+	color: #547;
+	visibility: hidden;
+}
+
+----------------/*2*/-----------------------
+----------------/*3*/-----------------------
+.game3:hover .game3__win{
+	animation: win 60s steps(1) forwards;
+}
+
+.game3:hover .game3__counter:after{
+	animation: timer_1 60s steps(60) forwards;
+}
+.game3:hover .game3__text span:after{
+	animation: timer_3 60s steps(60) forwards;
+}
+
+.game3__body:hover .game3__counter:after,
+.game3__body:hover .game3__text span:after{
+	animation-play-state: paused;
+}
+
+.game3__body,
+.game3__body2,
+.game3__body3,
+.game3__body4,
+.game3__body5,
+.game3__body6,
+.game3__body7,
+.game3__items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+.game3__body:before,
+.game3__body:after,
+.game3__body2:before,
+.game3__body2:after,
+.game3__body3:before,
+.game3__body3:after,
+.game3__body4:before,
+.game3__body4:after,
+.game3__body5:before,
+.game3__body5:after,
+.game3__body6:before,
+.game3__body6:after,
+.game3__body7:before,
+.game3__body7:after,
+.game3__items:before,
+.game3__items:after{
+	content: '';
+	pointer-events: all;
+	width: 50px;
+	height: 50px;
+	border-radius: 45%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: inline-block;
+}
+.game3__body:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_10 6s infinite;
+}
+.game3__body:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_2 5s infinite;
+}
+.game3__body2:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_2 45s infinite;
+}
+.game3__body2:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: flyt_4 5s infinite;
+}
+/*.game3__body3:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_4 13s infinite;
+}
+.game3__body3:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_5 18s infinite;
+}
+.game3__body4:before{
+	
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_1 13s infinite;
+}
+.game3__body4:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_3 26s infinite;
+}
+.game3__body5:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_7 20s infinite;
+}
+.game3__body5:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_7 17s infinite;
+}
+.game3__body6:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_8 42s infinite;
+
+}
+.game3__body6:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_8 52s infinite;
+
+	}
+	.game3__body7:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_7 34s infinite;
+}
+.game3__body7:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_8 26s infinite;
+}
+.game3__items:before{
+
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 95% 0%;
+	animation: flyt_3 25s infinite;
+}
+.game3__items:after{
+	background-image: url(../img/dan1.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 0%;
+	animation: flyt_6 25s infinite;
+}
+*/
+@keyframes flyt_1{
+	5% {transform: translate(20vw, 5vh);}
+	10% {transform: translate(5vw, 20vh);}
+	15% {transform: translate(40vw, 10vh);}
+	20% {transform: translate(10vw, 40vh);}
+	25% {transform: translate(50vw, 10vh);}
+	30% {transform: translate(10vw, 50vh);}
+	35% {transform: translate(55vw,70vh);}
+	40% {transform: translate(5vw, 55vh);}
+	45% {transform: translate(55vw, 75vh);}
+	50% {transform: translate(85vw, 65vh);}
+	55% {transform: translate(8vw, 85vh);}
+	60% {transform: translate(5vw, 65vh);}
+	65% {transform: translate(44vw, 70vh);}
+	70% {transform: translate(25vw, 78vh);}
+	75% {transform: translate(78vw, 36vh);}
+	80% {transform: translate(20vw, 15vh);}
+	85% {transform: translate(30vw,23vh);}
+	90% {transform: translate(5vw, 85vh);}
+	95% {transform: translate(88vw, 15vh);}
+	0%, 100% {transform: translate(63px, 77px);}
+}
+@keyframes flyt_2{
+	25% {transform: translate(0vw, 96vh);}
+	50% {transform: translate(96vw, 0vh);}
+	75% {transform: translate(0vw, 96vh);}
+	0%, 100% {transform: translate(96px, 0px);}
+}
+@keyframes flyt_3{
+	10% {transform: translate(25vw, 75vh);}
+	20% {transform: translate(66vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 45vh);}
+	40% {transform: translate(95.667vw, 66vh);}
+	50% {transform: translate(0vw, 20vh);}
+	60% {transform: translate(65vw, 15vh);}
+	70% {transform: translate(95vw, 30vh);}
+	80% {transform: translate(95.667vw, 75vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flyt_4{
+	25% {transform: translate(90.667vh, 0vh);}
+	50% {transform: translate(0vh, 90.667vh);}
+	75% {transform: translate(90.667vh, 90.667vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flyt_5{
+	10% {transform: translate(64vw, 50vh);}
+	20% {transform: translate(33vw, 95.667vh);}
+	30% {transform: translate(95.667vw, 95.667vh);}
+	40% {transform: translate(95.667vw, 33vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw, 33vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(95.667vw, 95.667vh);}
+	90% {transform: translate(50vw, 0vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flyt_6{
+	10% {transform: translate(83vw, 69vh);}
+	20% {transform: translate(33vw, 44vh);}
+	30% {transform: translate(95.667vw, 25vh);}
+	40% {transform: translate(20vw, 10vh);}
+	50% {transform: translate(0vw, 45vh);}
+	60% {transform: translate(95.667vw,75vh);}
+	70% {transform: translate(0vw, 30vh);}
+	80% {transform: translate(11vw, 26vh);}
+	90% {transform: translate(50vw, 50vh);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes flyt_7{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(100vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 100vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(55vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(22vw, 22vh);}
+	90% {transform: translate(52vw, 13vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+@keyframes flyt_8{
+	5% {transform: translate(20vw, 5vh);}
+	10% {transform: translate(5vw, 20vh);}
+	15% {transform: translate(40vw, 10vh);}
+	20% {transform: translate(10vw, 40vh);}
+	25% {transform: translate(50vw, 10vh);}
+	30% {transform: translate(10vw, 50vh);}
+	35% {transform: translate(70vw,70vh);}
+	40% {transform: translate(75vw, 55vh);}
+	45% {transform: translate(55vw, 75vh);}
+	50% {transform: translate(85vw, 8vh);}
+	55% {transform: translate(8vw, 85vh);}
+	60% {transform: translate(5vw, 65vh);}
+	65% {transform: translate(44vw, 70vh);}
+	70% {transform: translate(36vw, 78vh);}
+	75% {transform: translate(78vw, 36vh);}
+	80% {transform: translate(20vw, 15vh);}
+	85% {transform: translate(30vw,85vh);}
+	90% {transform: translate(85vw, 76vh);}
+	95% {transform: translate(88vw, 88vh);}
+	0%, 100% {transform: translate(63px, 77px);}
+}
+@keyframes flyt_9{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(90vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 40vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(15vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(46vw, 60vh);}
+	90% {transform: translate(52vw, 40vh);}
+	0%, 100% {transform: translate(45px, 45px);}
+}
+@keyframes flyt_10{
+	25% {transform: translate(95vw, 95vh);}
+	50% {transform: translate(0vh, 95vh);}
+	75% {transform: translate(vw, 0vw);}
+	0%, 100% {transform: translate(0px, 0px);}
+}
+
+
+
+
+@keyframes win{
+	0%{}
+	100%{
+		visibility: visible;
+	}
+}
+
+@keyframes timer_1{
+	0%{
+		text-indent: -300ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: 0ch;
+	}
+}
+@keyframes timer_2{
+	0%{
+		text-indent: 0ch;
+	}
+	50%{
+		color: yellow;
+	}
+	100% {
+		color: red;
+		text-indent: -300ch;
+	}
+}
+
+.game3__body:hover:before,
+.game3__body:hover:after,
+.game3__body2:hover:before,
+.game3__body2:hover:after,
+.game3__body3:hover:before,
+.game3__body3:hover:after,
+.game3__body4:hover:before,
+.game3__body4:hover:after,
+.game3__body5:hover:before,
+.game3__body5:hover:after,
+.game3__body6:hover:before,
+.game3__body6:hover:after,
+.game3__body7:hover:before,
+.game3__body7:hover:after,
+.game3__body:hover .game3__items:before,
+.game3__body:hover .game3__items:after{
+	display: none;
+}
+
+.game3__body:hover .game3__items{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: #333;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	pointer-events: all;
+}
+.game3__body:hover .game3__text{
+	visibility: visible;
+}
+
+.game3__text {
+	font-size: 40px;
+	visibility: hidden;
+}
+.game3__text span{
+	font-size: 40px;
+	width: 109px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	color: blue;
+}
+
+.game3__counter {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 72px;
+	font-size: 26px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.game3__text span:after,
+.game3__counter:after{
+	display: block;
+	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
+}
+
+.game3__win {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #333;
+	background: url('../img/win.svg') 0 0 / 100% 100%  no-repeat;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	font-size: 55px;
+	color: #547;
+	visibility: hidden;
+}
+
+----------------/*3*/-----------------------
 .info {
 	position: absolute;
 	right: 20px;
@@ -556,14 +1401,8 @@ background-color: blue;
 .menu__body:target{
 	display: block;
 }
-.conteiner .foo{
-	width: 100%;
-	height: 100%;
-	cursor: url('../img/cursor4.png') 24 24, auto;
-
-}
-
-div#idconteiner {
+-----
+div#idconteiner1 {
 	width: 100%;
 	height: 100%;
 		cursor: url('../img/cursor2.png') 24 24, auto;
@@ -584,7 +1423,12 @@ div#idconteiner4 {
 	height: 100%;
 	cursor: url('../img/cursor4.png') 24 24, auto;
 }
+-----------------------------
+.menu__color-icon{
+	display:flex;
 
+
+}
 .menu__color {
 	height: 100%;
 	display: flex;
@@ -599,38 +1443,42 @@ div#idconteiner4 {
 	font-size: 40px;
 	color: #fff;
 	background: transparent;
-	padding: 0px 0px 15px 0px;
+	padding: 70px 0px 30px 0px;
+}
+.menu__textcolir{
+
 }
 input#first {
 
-	font-size: 35px;
+	font-size: 25px;
 	color: #fff;
 background: transparent;
-	padding: 0px 0px 15px 0px;	
+	margin: 0px 0px 0px 0px;
 }
 input#first1 {
 
-	font-size: 35px;
+	font-size: 25px;
 	color: #fff;
 background: transparent;
-	padding: 0px 0px 15px 0px;
+	margin: 35px 0px 0px 0px;
 }
 input#first2 {
 
-	font-size: 35px;
+	font-size: 25px;
 	color: #fff;
 background: transparent;
-	padding: 0px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
 
 }
 input#first3 {
 
-	font-size: 35px;
+	font-size: 25px;
 	color: #fff;
 background: transparent;
-	padding: 0px 0px 15px 0px;
+	margin: 0px 0px 15px 0px;
 }
 div#rect{
+
 	width: 100%;
 	height: 100%;
 position: fixed;
@@ -638,10 +1486,11 @@ left: 0;
 top: 0;
 }
 input#myColor{
+		font-size: 25px;
 	text-align: center;
-margin: 0px 0px 15px 0px;
+margin: 0px 0px 0px 0px;
 }
-------
+-----------------------------------
 .menu__ikonki {
 
 }
@@ -663,10 +1512,11 @@ input#ikon_1{
 	line-height: 23px;
 	position: relative;
 	z-index: 2;
-	background: url('../img/cursor1full.png') -19px  -10px /120px no-repeat;
-		cursor: url('../img/cursor2.png') 24 24, auto;
+	background: url() -19px  -10px /120px no-repeat;
+		cursor: url() 24 24, auto;
 }
 input#ikon_2{
+		margin: 30px 0px 0px 0px;
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -697,6 +1547,7 @@ input#ikon_3{
 	cursor: url('../img/cursor3.png') 24 24, auto;
 }
 input#ikon_4{
+
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -710,6 +1561,7 @@ input#ikon_4{
 	z-index: 2;
 		background: url('../img/cursor4full.png') -19px  0px  /120px no-repeat;
 	cursor: url('../img/cursor4.png') 24 24, auto;
+
 }
 input#arrow1{
 	margin: 0px -20px 0px -20px;
@@ -726,3 +1578,60 @@ input#arrow1{
 				color: #fff;
 }
 -----
+.menu__cursor {
+
+}
+.menu__danger {
+	margin: 30px 0px 0px 0px;
+	height: 100%;
+
+	justify-content: space-between;
+	justify-content:center;
+	text-align: center;
+	align-items: center;
+}
+
+input#D_1{
+	margin: 0px 64px 0px 0px;
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+	background: url(../img/dan1.png) 10px  0px /120px no-repeat;
+}
+input#D_2{
+		margin: 0px 64px 0px 0px;
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+	background: url() 15px 15px /120px no-repeat;
+}
+input#D_3{
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+	background: url(../img/1356462528_1357539925.jpg) -50px  -10px /120px no-repeat;
+}
