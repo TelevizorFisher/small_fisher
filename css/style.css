@@ -12,17 +12,93 @@ html,body{
 	color: #fff;
 	font-size: 16px;
 }
+
 a{
 	text-decoration: none;
 }
-
 .wrapper{
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
+
 }
-------------------------------/*1*/----------------
+
 #gamecursor1 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor2.png') 24 24, auto;
+
+}
+
+#gamecursor2 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursorlama.png') 21 24, auto;
+
+}
+#gamecursor3 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor3.png') 24 24, auto;
+
+}
+#gamecursor4 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor4.png') 24 24, auto;
+
+}
+
+#gamecursor21 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor2.png') 24 24, auto;
+
+}
+#gamecursor22 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursorlama.png') 24 24, auto;
+
+}
+#gamecursor23 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor3.png') 24 24, auto;
+
+}
+#gamecursor24 {
+		position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: url('../img/cursor4.png') 24 24, auto;
+
+}
+
+#gamecursor31 {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -30,47 +106,67 @@ a{
 	left: 0;
 	cursor: url('../img/cursor2.png') 24 24, auto;
 }
-#gamecursor2 {
-	position: fixed;
+#gamecursor32 {
+		position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	cursor: url('../img/cursorlama.png') 21 24, auto;
+	cursor: url('../img/cursorlama.png') 24 24, auto;
+
 }
-#gamecursor3 {
-	position: fixed;
+#gamecursor33 {
+		position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	cursor: url('../img/cursor3.png') 24 24, auto;
+
 }
-#gamecursor4 {
-	position: fixed;
+#gamecursor34 {
+		position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	cursor: url('../img/cursor4.png') 24 24, auto;
+
+}
+div#idconteiner1 {
+	width: 100%;
+	height: 100%;
+	cursor: url('../img/cursor2.png') 24 24, auto;
+}
+div#idconteiner2 {
+	width: 100%;
+	height: 100%;
+	cursor: url('../img/cursorlama.png') 24 24, auto;
+}
+div#idconteiner3 {
+	width: 100%;
+	height: 100%;
+	cursor: url('../img/cursor3.png') 24 24, auto;
+}
+div#idconteiner4 {
+	width: 100%;
+	height: 100%;
+	cursor: url('../img/cursor4.png') 24 24, auto;
 }
 
-.game:hover .game__win{
+.game__cursor:hover .game__win{
 	animation: win 60s steps(1) forwards;
 }
-
 .game:hover .game__counter:after{
 	animation: timer_1 60s steps(60) forwards;
 }
 .game:hover .game__text span:after{
 	animation: timer_2 60s steps(60) forwards;
 }
-
 .game__body:hover .game__counter:after,
 .game__body:hover .game__text span:after{
 	animation-play-state: paused;
 }
-
 .game__body,
 .game__body2,
 .game__body3,
@@ -114,12 +210,10 @@ a{
 	display: inline-block;
 }
 .game__body:before{
-
 	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-
 	animation: fly_1 25s infinite;
 }
 .game__body:after{
@@ -127,12 +221,11 @@ a{
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
-
 	animation: fly_2 16s infinite;
 }
 .game__body2:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
-/background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 	background-color: #fcf4;
@@ -154,7 +247,7 @@ a{
 }
 .game__body3:after{
 	background-color: #effb;
-		background-image: url(../img/1356462528_1357539925.jpg);
+	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
@@ -198,18 +291,18 @@ a{
 	background-size: 100px 100px;
 	background-position: 0% 25%;
 	animation: fly_8 30s infinite;
-		background-color: #076400;
+	background-color: #076400;
 }
 .game__body6:after{
 	background-color: #effb;
-		background-image: url(../img/1356462528_1357539925.jpg);
+	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	animation: fly_8 52s infinite;
-		background-color: #076400;
-	}
-	.game__body7:before{
+	background-color: #076400;
+}
+.game__body7:before{
 	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
@@ -218,14 +311,14 @@ a{
 }
 .game__body7:after{
 	background-color: #effb;
-		background-image: url(../img/1356462528_1357539925.jpg);
+	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 100% 25%;
 	animation: fly_8 22s infinite;
 }
 .game__items:before{
-		background-image: url(../img/1356462528_1357539925.jpg);
+	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
@@ -233,7 +326,7 @@ a{
 	animation: fly_3 20s infinite;
 }
 .game__items:after{
-		background-image: url(../img/1356462528_1357539925.jpg);
+	background-image: url(../img/1356462528_1357539925.jpg);
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: 0% 25%;
@@ -345,18 +438,12 @@ a{
 	90% {transform: translate(52vw, 40vh);}
 	0%, 100% {transform: translate(45px, 45px);}
 }
-
-
-
-
-
 @keyframes win{
 	0%{}
 	100%{
 		visibility: visible;
 	}
 }
-
 @keyframes timer_1{
 	0%{
 		text-indent: -300ch;
@@ -381,7 +468,6 @@ a{
 		text-indent: -300ch;
 	}
 }
-
 .game__body:hover:before,
 .game__body:hover:after,
 .game__body2:hover:before,
@@ -400,7 +486,6 @@ a{
 .game__body:hover .game__items:after{
 	display: none;
 }
-
 .game__body:hover .game__items{
 	position: fixed;
 	width: 100%;
@@ -416,7 +501,6 @@ a{
 .game__body:hover .game__text{
 	visibility: visible;
 }
-
 .game__text {
 	font-size: 40px;
 	visibility: hidden;
@@ -429,7 +513,6 @@ a{
 	overflow: hidden;
 	color: blue;
 }
-
 .game__counter {
 	position: absolute;
 	bottom: 20px;
@@ -439,13 +522,11 @@ a{
 	overflow: hidden;
 	white-space: nowrap;
 }
-
 .game__text span:after,
 .game__counter:after{
 	display: block;
 	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
 }
-
 .game__win {
 	position: fixed;
 	width: 100%;
@@ -454,32 +535,96 @@ a{
 	left: 0;
 	z-index: 10;
 	background-color: #333;
-	background: url('../img/win.svg') 0 0 / 100% 100%  no-repeat;
+	background: url('../img/win.svg') 0 0 / 100% 100% no-repeat;
 	display: flex;
 	justify-content:center;
 	align-items: center;
 	text-align: center;
 	font-size: 55px;
-	color: #547;
+	color: #00FF;
 	visibility: hidden;
-}
------------------/*2*/-----------------------
-.game2:hover .game2__win{
-	animation: win 60s steps(1) forwards;
+	justify-content: center;
+	flex-direction: column;
 }
 
+input#level1{
+	margin: 0px 66px 0px 0px;
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	border-radius: 35%;
+	border: 1px solid #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 25;
+
+	position: relative;
+
+}
+.info {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 50;
+}
+.info__icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+}
+.info__body {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+	width: 250px;
+	border-radius: 0 0 18px 0;
+	padding: 40px 5px 35px 20px;
+}
+.info__body:target{
+	display: block;
+}
+.info__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 18px;
+	color: #fff;
+}
+.info__text {
+	padding: 0px 10px 0px 0px;
+}
+.info__text p{
+	margin: 0px 0px 10px 0px;
+}
+.info__text p:last-child{
+	margin: 0;
+}
+                  /*2*/
+.game__cursor2:hover .game2__win{
+	animation: wint 60s steps(1) forwards;
+}
 .game2:hover .game2__counter:after{
-	animation: timer_1 60s steps(60) forwards;
+	animation: timert_1 60s steps(60) forwards;
 }
 .game2:hover .game2__text span:after{
-	animation: timer_2 60s steps(60) forwards;
+	animation: timert_2 60s steps(60) forwards;
 }
-
 .game2__body:hover .game2__counter:after,
 .game2__body:hover .game2__text span:after{
 	animation-play-state: paused;
 }
-
 .game2__body,
 .game2__body2,
 .game2__body3,
@@ -513,8 +658,8 @@ a{
 .game2__items:after{
 	content: '';
 	pointer-events: all;
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 	border-radius: 45%;
 	position: absolute;
 	top: 0;
@@ -523,128 +668,118 @@ a{
 	display: inline-block;
 }
 .game2__body:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_1 40s infinite;
 
 }
 .game2__body:after{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_4 16s infinite;
-
 }
 .game2__body2:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_2 18s infinite;
 }
 .game2__body2:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 25%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_5 26s infinite;
 }
 .game2__body3:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+		background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_4 25s infinite;
 }
 .game2__body3:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_5 18s infinite;
 }
 .game2__body4:before{
-	
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_1 30s infinite;
 }
 .game2__body4:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_3 26s infinite;
 }
 .game2__body5:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+		background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_7 20s infinite;
 }
 .game2__body5:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_7 17s infinite;
 }
 .game2__body6:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+		background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_8 42s infinite;
-
 }
 .game2__body6:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_8 52s infinite;
-
 	}
-	.game2__body7:before{
-
+.game2__body7:before{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+		background-size: 140px 140px;
+	background-position: 6% -8%;
 	animation: flytw_7 34s infinite;
 }
 .game2__body7:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_8 26s infinite;
+
+
 }
 .game2__items:before{
-
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_3 25s infinite;
 }
 .game2__items:after{
 	background-image: url(../img/dan1.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 150px 150px;
+	background-position: 90% 0%;
 	animation: flytw_6 25s infinite;
 }
 @keyframes flytw_1{
@@ -763,19 +898,13 @@ a{
 	90% {transform: translate(52vw, 40vh);}
 	0%, 100% {transform: translate(45px, 45px);}
 }
-
-
-
-
-
-@keyframes win{
+@keyframes wint{
 	0%{}
 	100%{
 		visibility: visible;
 	}
 }
-
-@keyframes timer_1{
+@keyframes timert_1{
 	0%{
 		text-indent: -300ch;
 	}
@@ -787,7 +916,7 @@ a{
 		text-indent: 0ch;
 	}
 }
-@keyframes timer_2{
+@keyframes timert_2{
 	0%{
 		text-indent: 0ch;
 	}
@@ -799,7 +928,6 @@ a{
 		text-indent: -300ch;
 	}
 }
-
 .game2__body:hover:before,
 .game2__body:hover:after,
 .game2__body2:hover:before,
@@ -818,7 +946,6 @@ a{
 .game2__body:hover .game2__items:after{
 	display: none;
 }
-
 .game2__body:hover .game2__items{
 	position: fixed;
 	width: 100%;
@@ -834,7 +961,6 @@ a{
 .game2__body:hover .game2__text{
 	visibility: visible;
 }
-
 .game2__text {
 	font-size: 40px;
 	visibility: hidden;
@@ -847,7 +973,6 @@ a{
 	overflow: hidden;
 	color: blue;
 }
-
 .game2__counter {
 	position: absolute;
 	bottom: 20px;
@@ -857,13 +982,11 @@ a{
 	overflow: hidden;
 	white-space: nowrap;
 }
-
 .game2__text span:after,
 .game2__counter:after{
 	display: block;
 	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
 }
-
 .game2__win {
 	position: fixed;
 	width: 100%;
@@ -878,28 +1001,43 @@ a{
 	align-items: center;
 	text-align: center;
 	font-size: 55px;
-	color: #547;
+		color: #00FF;
 	visibility: hidden;
+	justify-content: center;
+	flex-direction: column;
 }
+input#level2{
+	margin: 0px 66px 0px 0px;
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	border-radius: 35%;
+	border: 1px solid #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 25;
+	flex-wrap: wrap;
+	position: relative;
 
-----------------/*2*/-----------------------
-----------------/*3*/-----------------------
-.game3:hover .game3__win{
-	animation: win 60s steps(1) forwards;
 }
+                  /*2*/
+                  /*3*/
 
+.game__cursor3:hover .game3__win{
+	animation: wintr 60s steps(1) forwards;
+}
 .game3:hover .game3__counter:after{
-	animation: timer_1 60s steps(60) forwards;
+	animation: timertr_1 60s steps(60) forwards;
 }
 .game3:hover .game3__text span:after{
-	animation: timer_3 60s steps(60) forwards;
+	animation: timertr_2 60s steps(60) forwards;
 }
-
 .game3__body:hover .game3__counter:after,
 .game3__body:hover .game3__text span:after{
 	animation-play-state: paused;
 }
-
 .game3__body,
 .game3__body2,
 .game3__body3,
@@ -933,138 +1071,129 @@ a{
 .game3__items:after{
 	content: '';
 	pointer-events: all;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	border-radius: 45%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
 	display: inline-block;
+		border: 1px solid #fff;
 }
 .game3__body:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_10 6s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_10 35s infinite;
 }
 .game3__body:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_2 5s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_2 35s infinite;
 }
 .game3__body2:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
 	animation: flyt_2 45s infinite;
 }
 .game3__body2:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 25%;
-	animation: flyt_4 5s infinite;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_4 35s infinite;
 }
-/*.game3__body3:before{
+.game3__body3:before{
 
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_4 13s infinite;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_4 30s infinite;
 }
 .game3__body3:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_5 18s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_5 25s infinite;
 }
 .game3__body4:before{
-	
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_1 13s infinite;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_1 35s infinite;
 }
 .game3__body4:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_3 26s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_3 30s infinite;
 }
 .game3__body5:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_7 20s infinite;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_7 25s infinite;
 }
 .game3__body5:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_7 17s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_7 30s infinite;
 }
 .game3__body6:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
 	animation: flyt_8 42s infinite;
-
 }
 .game3__body6:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_8 52s infinite;
-
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_8 50s infinite;
 	}
 	.game3__body7:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_7 34s infinite;
+		background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_7 40s infinite;
 }
 .game3__body7:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_8 26s infinite;
+	background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_8 35s infinite;
 }
 .game3__items:before{
-
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 95% 0%;
-	animation: flyt_3 25s infinite;
+		background-size: 75px 75px;
+			background-position: 50% 40%;
+	animation: flyt_3 35s infinite;
 }
 .game3__items:after{
-	background-image: url(../img/dan1.png);
+	background-image: url(../img/music.png);
 	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: 0% 0%;
-	animation: flyt_6 25s infinite;
+			background-size: 75px 75px;
+	background-position: 50% 40%;
+	animation: flyt_6 35s infinite;
 }
-*/
 @keyframes flyt_1{
 	5% {transform: translate(20vw, 5vh);}
 	10% {transform: translate(5vw, 20vh);}
@@ -1187,18 +1316,13 @@ a{
 	75% {transform: translate(vw, 0vw);}
 	0%, 100% {transform: translate(0px, 0px);}
 }
-
-
-
-
-@keyframes win{
+@keyframes wintr{
 	0%{}
 	100%{
 		visibility: visible;
 	}
 }
-
-@keyframes timer_1{
+@keyframes timertr_1{
 	0%{
 		text-indent: -300ch;
 	}
@@ -1210,7 +1334,7 @@ a{
 		text-indent: 0ch;
 	}
 }
-@keyframes timer_2{
+@keyframes timertr_2{
 	0%{
 		text-indent: 0ch;
 	}
@@ -1222,7 +1346,6 @@ a{
 		text-indent: -300ch;
 	}
 }
-
 .game3__body:hover:before,
 .game3__body:hover:after,
 .game3__body2:hover:before,
@@ -1241,7 +1364,6 @@ a{
 .game3__body:hover .game3__items:after{
 	display: none;
 }
-
 .game3__body:hover .game3__items{
 	position: fixed;
 	width: 100%;
@@ -1257,7 +1379,6 @@ a{
 .game3__body:hover .game3__text{
 	visibility: visible;
 }
-
 .game3__text {
 	font-size: 40px;
 	visibility: hidden;
@@ -1270,7 +1391,6 @@ a{
 	overflow: hidden;
 	color: blue;
 }
-
 .game3__counter {
 	position: absolute;
 	bottom: 20px;
@@ -1280,20 +1400,18 @@ a{
 	overflow: hidden;
 	white-space: nowrap;
 }
-
 .game3__text span:after,
 .game3__counter:after{
 	display: block;
 	content: "00:0000:0100:0200:0300:0400:0500:0600:0700:0800:0900:1000:1100:1200:1300:1400:1500:1600:1700:1800:1900:2000:2100:2200:2300:2400:2500:2600:2700:2800:2900:3000:3100:3200:3300:3400:3500:3600:3700:3800:3900:4000:4100:4200:4300:4400:4500:4600:4700:4800:4900:5000:5100:5200:5300:5400:5500:5600:5700:5800:5901:00";
 }
-
 .game3__win {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 50;
 	background-color: #333;
 	background: url('../img/win.svg') 0 0 / 100% 100%  no-repeat;
 	display: flex;
@@ -1301,75 +1419,26 @@ a{
 	align-items: center;
 	text-align: center;
 	font-size: 55px;
-	color: #547;
+	color: #00FF;
 	visibility: hidden;
+	justify-content: center;
+	flex-direction: column;
 }
 
-----------------/*3*/-----------------------
-.info {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	z-index: 50;
-}
-.info__icon {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	border: 1px solid #fff;
-	font-size: 20px;
-	color: #fff;
-	text-align: center;
-	line-height: 23px;
-	position: relative;
-	z-index: 2;
-}
-.info__body {
-	display: none;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background-color: #000;
-	width: 250px;
-	border-radius: 0 0 18px 0;
-	padding: 40px 5px 35px 20px;
-}
-.info__body:target{
-	display: block;
-}
 
-.info__close {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	font-size: 18px;
-	color: #fff;
-}
-.info__text {
-	padding: 0px 10px 0px 0px;
-}
-.info__text p{
-	margin: 0px 0px 10px 0px;
-}
-.info__text p:last-child{
-	margin: 0;
-}
-
------
+                  /*3*/
 .menu {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 10;
 	visibility: hiden;
-
-
+	pointer-events: none;
 }
-.menu__icon {
 
+.menu__icon {
 	display: inline-block;
 	width: 100px;
 	height: 25px;
@@ -1381,11 +1450,9 @@ a{
 	line-height: 23px;
 	position: relative;
 	z-index: 41;
-
-
+			pointer-events: all;
 }
 .menu__body {
-
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -1394,40 +1461,12 @@ a{
 	left: 0;
 	z-index: 30;
 	background-color: #333;
-
 	font-size: 40px;
-
+	pointer-events: none;
 }
 .menu__body:target{
 	display: block;
-}
------
-div#idconteiner1 {
-	width: 100%;
-	height: 100%;
-		cursor: url('../img/cursor2.png') 24 24, auto;
-}
-
-div#idconteiner2 {
-	width: 100%;
-	height: 100%;
-	cursor: url('../img/cursorlama.png') 21 24, auto;
-}
-div#idconteiner3 {
-	width: 100%;
-	height: 100%;
-	cursor: url('../img/cursor3.png') 24 24, auto;
-}
-div#idconteiner4 {
-	width: 100%;
-	height: 100%;
-	cursor: url('../img/cursor4.png') 24 24, auto;
-}
------------------------------
-.menu__color-icon{
-	display:flex;
-
-
+		pointer-events: all;
 }
 .menu__color {
 	height: 100%;
@@ -1439,68 +1478,53 @@ div#idconteiner4 {
 	align-items: center;
 }
 .menu__close {
-
 	font-size: 40px;
 	color: #fff;
 	background: transparent;
 	padding: 70px 0px 30px 0px;
 }
 .menu__textcolir{
-
+	margin: 0px 0px 35px 0px;
 }
 input#first {
-
 	font-size: 25px;
 	color: #fff;
-background: transparent;
+	background: transparent;
 	margin: 0px 0px 0px 0px;
 }
 input#first1 {
-
 	font-size: 25px;
 	color: #fff;
-background: transparent;
-	margin: 35px 0px 0px 0px;
+	background: transparent;
+	margin: 0px 15px 0px 0px;
 }
 input#first2 {
-
 	font-size: 25px;
 	color: #fff;
-background: transparent;
-	margin: 0px 0px 0px 0px;
-
+	background: transparent;
+	margin: 0px 15px 0px 0px;
 }
 input#first3 {
-
 	font-size: 25px;
 	color: #fff;
 background: transparent;
-	margin: 0px 0px 15px 0px;
+	margin: 0px 15px 0px 0px;
 }
 div#rect{
-
 	width: 100%;
 	height: 100%;
-position: fixed;
-left: 0;
-top: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
 }
 input#myColor{
-		font-size: 25px;
+	font-size: 25px;
 	text-align: center;
-margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
------------------------------------
-.menu__ikonki {
-
-}
-.menu__elements {
-
-}
-
-
+.menu__ikonki {}
+.menu__elements {}
 input#ikon_1{
-
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -1512,11 +1536,11 @@ input#ikon_1{
 	line-height: 23px;
 	position: relative;
 	z-index: 2;
-	background: url() -19px  -10px /120px no-repeat;
-		cursor: url() 24 24, auto;
+	background: url(../img/cursor2.png) 12px  -10px /45px no-repeat;
+	cursor: url(../img/cursor2.png) 24 24, auto;
 }
 input#ikon_2{
-		margin: 30px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -1547,7 +1571,6 @@ input#ikon_3{
 	cursor: url('../img/cursor3.png') 24 24, auto;
 }
 input#ikon_4{
-
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -1559,40 +1582,89 @@ input#ikon_4{
 	line-height: 23px;
 	position: relative;
 	z-index: 2;
-		background: url('../img/cursor4full.png') -19px  0px  /120px no-repeat;
+	background: url('../img/cursor4full.png') -19px  0px  /120px no-repeat;
 	cursor: url('../img/cursor4.png') 24 24, auto;
-
 }
 input#arrow1{
-	margin: 0px -20px 0px -20px;
-		display: inline-block;
-			text-align: center;
+	margin: 0px -20px 25px -20px;
+	display: inline-block;
+	text-align: center;
 	width: 80px;
-		font-size: 80px;
+	font-size: 80px;
 	height: 60px;
 	position: relative;
-		text-align: center;
-		z-index: 2;
-			line-height: 23px;
-			background: transparent;
-				color: #fff;
+	text-align: center;
+	z-index: 2;
+	line-height: 23px;
+	background: transparent;
+	color: #fff;
 }
------
-.menu__cursor {
 
-}
+.menu__cursor {}
 .menu__danger {
-	margin: 30px 0px 0px 0px;
+	margin: -30px 0px 0px 0px;
 	height: 100%;
-
 	justify-content: space-between;
 	justify-content:center;
 	text-align: center;
 	align-items: center;
+	white-space: nowrap;
+	display: flex;
+
 }
+.menu__dang1 {
+		display: inline-block;
+}
+.menu__dang2 {
+	margin: 0px 0px 0px 6px;
+		display: inline-block;
+}
+.menu__dang3 {
+		margin: 0px 0px 0px 6px;
+		display: inline-block;
+}
+.menu__arrows1 {
+}
+/*
+.menu__ar1 {
+
+		width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	font-size: 20px;
+	text-align: center;
+	line-height: 23px;
+		display: inline-block;
+		position: relative;
+		z-index: 25;
+		background: url('../img/ikon.png') 1px  -13px  /75px no-repeat;
+}
+.menu__ar2 {
+	width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	font-size: 20px;
+	text-align: center;
+	line-height: 23px;
+	display: inline-block;
+	position: relative;
+	background: url('../img/ikon.png') 1px  -13px  /75px no-repeat;
+}
+.menu__ar3 {
+	width: 80px;
+	height: 60px;
+	border-radius: 50%;
+	font-size: 20px;
+	text-align: center;
+	line-height: 23px;
+	display: inline-block;
+	position: relative;
+	background: url('../img/ikon.png') 1px  -13px  /75px no-repeat;
+}
+*/
 
 input#D_1{
-	margin: 0px 64px 0px 0px;
+	margin: 0px 92px 0px 95px;
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -1607,7 +1679,7 @@ input#D_1{
 	background: url(../img/dan1.png) 10px  0px /120px no-repeat;
 }
 input#D_2{
-		margin: 0px 64px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	display: inline-block;
 	width: 80px;
 	height: 60px;
@@ -1619,7 +1691,7 @@ input#D_2{
 	line-height: 23px;
 	position: relative;
 	z-index: 2;
-	background: url() 15px 15px /120px no-repeat;
+	background: url(../img/music.png) 14px -5px /50px no-repeat;
 }
 input#D_3{
 	display: inline-block;
@@ -1633,5 +1705,6 @@ input#D_3{
 	line-height: 23px;
 	position: relative;
 	z-index: 2;
-	background: url(../img/1356462528_1357539925.jpg) -50px  -10px /120px no-repeat;
+	background: url(../img/owl_.png) 12px 0px /50px no-repeat;
 }
+
