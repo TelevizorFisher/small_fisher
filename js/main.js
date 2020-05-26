@@ -20,14 +20,14 @@ document.getElementById('id3game__body').hidden = true;
 	document.getElementById("first1").onclick = function () {
 	        var e = document.getElementById("rect");
 	        var a = document.getElementById("menu");
-	            e.style.backgroundImage = 'url("../img/flo.png")';
-	            a.style.backgroundImage = 'url("../img/flo.png")';
+	            e.style.backgroundImage = 'url(../img/flo.png)';
+	            a.style.backgroundImage = 'url(../img/flo.png)';
 	        }
 	document.getElementById("first2").onclick = function () {
 	        var e = document.getElementById("rect");
 	        var a = document.getElementById("menu");
-	            e.style.backgroundImage = 'url("../img/voter.png")';
-	            a.style.backgroundImage = 'url("../img/voter.png")';
+	            e.style.backgroundImage = 'url(../img/voter.png)';
+	            a.style.backgroundImage = 'url(../img/voter.png)';
 	        }
 	document.getElementById("first3").onclick = function () {
 			 var x = document.getElementById("myColor").value;
